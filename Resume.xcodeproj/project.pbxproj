@@ -15,6 +15,13 @@
 		5710B28423626CEE00501994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5710B28223626CEE00501994 /* LaunchScreen.storyboard */; };
 		5710B28F23626CEE00501994 /* ResumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B28E23626CEE00501994 /* ResumeTests.swift */; };
 		5710B29A23626CEE00501994 /* ResumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B29923626CEE00501994 /* ResumeUITests.swift */; };
+		5710B2A823626D5700501994 /* WorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B2A723626D5700501994 /* WorkExperience.swift */; };
+		5710B2AB23626D6F00501994 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B2AA23626D6F00501994 /* Education.swift */; };
+		5710B2AD236273C000501994 /* Resume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B2AC236273C000501994 /* Resume.swift */; };
+		5710B2AF236273CC00501994 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B2AE236273CC00501994 /* Language.swift */; };
+		5710B2B3236275FF00501994 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B2B2236275FF00501994 /* APIClient.swift */; };
+		5710B2B823628F0B00501994 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5710B2B723628F0B00501994 /* ResumeViewController.swift */; };
+		5775D0432362AEE100C51EF7 /* WorkExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5775D0422362AEE100C51EF7 /* WorkExperienceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		5710B29523626CEE00501994 /* ResumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5710B29923626CEE00501994 /* ResumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeUITests.swift; sourceTree = "<group>"; };
 		5710B29B23626CEE00501994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5710B2A723626D5700501994 /* WorkExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperience.swift; sourceTree = "<group>"; };
+		5710B2AA23626D6F00501994 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		5710B2AC236273C000501994 /* Resume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resume.swift; sourceTree = "<group>"; };
+		5710B2AE236273CC00501994 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		5710B2B2236275FF00501994 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5710B2B723628F0B00501994 /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		5775D0422362AEE100C51EF7 /* WorkExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,11 @@
 		5710B27623626CEB00501994 /* Resume */ = {
 			isa = PBXGroup;
 			children = (
+				5710B2B623628EF900501994 /* UI */,
+				5710B2B1236275E000501994 /* API */,
+				5710B2A923626D5A00501994 /* Model */,
 				5710B27723626CEB00501994 /* AppDelegate.swift */,
 				5710B27923626CEB00501994 /* SceneDelegate.swift */,
-				5710B27B23626CEB00501994 /* ViewController.swift */,
-				5710B27D23626CEB00501994 /* Main.storyboard */,
 				5710B28023626CEE00501994 /* Assets.xcassets */,
 				5710B28223626CEE00501994 /* LaunchScreen.storyboard */,
 				5710B28523626CEE00501994 /* Info.plist */,
@@ -126,6 +141,36 @@
 				5710B29B23626CEE00501994 /* Info.plist */,
 			);
 			path = ResumeUITests;
+			sourceTree = "<group>";
+		};
+		5710B2A923626D5A00501994 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5710B2AC236273C000501994 /* Resume.swift */,
+				5710B2A723626D5700501994 /* WorkExperience.swift */,
+				5710B2AA23626D6F00501994 /* Education.swift */,
+				5710B2AE236273CC00501994 /* Language.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5710B2B1236275E000501994 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5710B2B2236275FF00501994 /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5710B2B623628EF900501994 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5710B27D23626CEB00501994 /* Main.storyboard */,
+				5710B27B23626CEB00501994 /* ViewController.swift */,
+				5710B2B723628F0B00501994 /* ResumeViewController.swift */,
+				5775D0422362AEE100C51EF7 /* WorkExperienceCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5710B2AD236273C000501994 /* Resume.swift in Sources */,
 				5710B27C23626CEB00501994 /* ViewController.swift in Sources */,
 				5710B27823626CEB00501994 /* AppDelegate.swift in Sources */,
+				5710B2B823628F0B00501994 /* ResumeViewController.swift in Sources */,
+				5710B2B3236275FF00501994 /* APIClient.swift in Sources */,
+				5710B2AF236273CC00501994 /* Language.swift in Sources */,
+				5710B2AB23626D6F00501994 /* Education.swift in Sources */,
+				5710B2A823626D5700501994 /* WorkExperience.swift in Sources */,
 				5710B27A23626CEB00501994 /* SceneDelegate.swift in Sources */,
+				5775D0432362AEE100C51EF7 /* WorkExperienceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
